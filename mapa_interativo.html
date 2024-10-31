@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_745af5584357f7436310276ecc343cd4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_745af5584357f7436310276ecc343cd4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_745af5584357f7436310276ecc343cd4 = L.map(
+                "map_745af5584357f7436310276ecc343cd4",
+                {
+                    center: [-22.9068, -43.1729],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8e7fa96ee32f383f52ee683de8bb988a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8e7fa96ee32f383f52ee683de8bb988a.addTo(map_745af5584357f7436310276ecc343cd4);
+        
+    
+            var marker_ae7326c384cd1784cbc81def4b461ce9 = L.marker(
+                [-22.9068, -43.1729],
+                {}
+            ).addTo(map_745af5584357f7436310276ecc343cd4);
+        
+    
+            var icon_a99d128dbcdb8e5950c5065706db8497 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae7326c384cd1784cbc81def4b461ce9.setIcon(icon_a99d128dbcdb8e5950c5065706db8497);
+        
+    
+        var popup_f1eb2901ffb61c38d44bc44a7f031d58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_868c7df41c825cf0a7769d5ad5b9478f = $(`<div id="html_868c7df41c825cf0a7769d5ad5b9478f" style="width: 100.0%; height: 100.0%;">Rio de Janeiro - Pao de Açucar</div>`)[0];
+                popup_f1eb2901ffb61c38d44bc44a7f031d58.setContent(html_868c7df41c825cf0a7769d5ad5b9478f);
+            
+        
+
+        marker_ae7326c384cd1784cbc81def4b461ce9.bindPopup(popup_f1eb2901ffb61c38d44bc44a7f031d58)
+        ;
+
+        
+    
+    
+            marker_ae7326c384cd1784cbc81def4b461ce9.bindTooltip(
+                `<div>
+                     Clique para mais informaçoes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_41cfbf7d9d07e2f361655e52acf9dbe5 = L.polygon(
+                [[-22.9106, -43.2045], [-22.914, -43.1899], [-22.9227, -43.1925], [-22.9194, -43.2073]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_745af5584357f7436310276ecc343cd4);
+        
+    
+        var popup_695635ad8ab82a54b99bf72d6c6c5b79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_beac26d1b4287dc35efe8073c4d8cffb = $(`<div id="html_beac26d1b4287dc35efe8073c4d8cffb" style="width: 100.0%; height: 100.0%;">Area Especial do Parque</div>`)[0];
+                popup_695635ad8ab82a54b99bf72d6c6c5b79.setContent(html_beac26d1b4287dc35efe8073c4d8cffb);
+            
+        
+
+        polygon_41cfbf7d9d07e2f361655e52acf9dbe5.bindPopup(popup_695635ad8ab82a54b99bf72d6c6c5b79)
+        ;
+
+        
+    
+    
+            var tile_layer_b8a95d7f1fbecfba9739bd5ce8c52eb4 = L.tileLayer(
+                "Stamen Terrain",
+                {"attribution": "Map tiles by Stamen Design, CC BY 3.0 - Map data \u00a9 OpenStreetMap ", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b8a95d7f1fbecfba9739bd5ce8c52eb4.addTo(map_745af5584357f7436310276ecc343cd4);
+        
+    
+            var tile_layer_65f67897676d62a2178b7763a89917f5 = L.tileLayer(
+                "Stamen Toner",
+                {"attribution": "Map tiles by Stamen Design, CC BY 3.0 - Map data \u00a9 OpenStreetMap", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_65f67897676d62a2178b7763a89917f5.addTo(map_745af5584357f7436310276ecc343cd4);
+        
+    
+            var layer_control_0ac08e38db6de658eb17f1eedb068234_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_8e7fa96ee32f383f52ee683de8bb988a,
+                    "stamenterrain" : tile_layer_b8a95d7f1fbecfba9739bd5ce8c52eb4,
+                    "stamentoner" : tile_layer_65f67897676d62a2178b7763a89917f5,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_0ac08e38db6de658eb17f1eedb068234 = L.control.layers(
+                layer_control_0ac08e38db6de658eb17f1eedb068234_layers.base_layers,
+                layer_control_0ac08e38db6de658eb17f1eedb068234_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_745af5584357f7436310276ecc343cd4);
+
+        
+</script>
+</html>
